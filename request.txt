@@ -1,0 +1,28 @@
+POST http://localhost:8181/countries/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "capital": "sample",
+    "population": "300",
+    "languagesID": "1"
+    
+}
+
+PUT http://localhost:8181/countries/ HTTP/1.1
+content-type: application/json
+
+{
+    "id": "14",
+    "name": "sample3",
+    "capital": "sample3",
+    "population": "900",
+    "languagesID": "2"
+    
+}
+
+GET http://localhost:8181/countries/ HTTP/1.1
+
+GET http://localhost:8181/countries/14 HTTP/1.1
+
+DELETE http://localhost:8181/countries/13 HTTP/1.1
