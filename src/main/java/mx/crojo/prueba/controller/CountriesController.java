@@ -57,9 +57,9 @@ public class CountriesController {
          countriesSrv.guardar(con);
     }
 
-    @PutMapping("/countries/{id}")
+    @PutMapping("/countries/")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<Countries> upOne(  @RequestBody Countries con , @PathVariable Long id  ){
+    public ResponseEntity<Countries> upOne(  @RequestBody Countries con   ){
 
         Countries conEncontrado;
         conEncontrado = countriesSrv.encontrar(con);
